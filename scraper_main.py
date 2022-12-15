@@ -7,8 +7,9 @@ import requests
 import csv
 import cv2
 
-image_results = []
+
 def scraper(api_key, quer, location):
+    image_results = []
     params = {
       "q": quer,
       "hl": "en",
