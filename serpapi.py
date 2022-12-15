@@ -21,7 +21,7 @@ while images_is_present:
     if "error" not in results:
         for image in results["images_results"]:
             if image["thumbnail"] not in image_results:
-                    image_results.append(image["original"])
+                    image_results.append(image["thumbnail"])
                 
 # update to
         params["ijn"] += 1
