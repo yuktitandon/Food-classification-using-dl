@@ -8,7 +8,7 @@ import csv
 import cv2
 
 image_results = []
-def scraper(api_key, quer):
+def scraper(api_key, quer, location):
     params = {
       "q": quer,
       "hl": "en",
@@ -35,7 +35,7 @@ def scraper(api_key, quer):
         else:
             images_is_present = False
             print(results["error"])
-    dirn = "/Users/jangayarkanni/Desktop/GAIP/Note_book/"+quer+"_dats"
+    dirn = location+quer+"_dats"
     os.mkdir(dirn)       
     for i in range(len(image_results)):
         re1 = urllib.request.urlopen(image_results[i-1])
