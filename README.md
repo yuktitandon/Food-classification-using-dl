@@ -1,3 +1,3 @@
 # Food-classification-using-dl
 
-serpapi.py : Web Scraping images
+scraper_main.py : Web Scraping images
